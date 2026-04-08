@@ -1,0 +1,22 @@
+import vehiculos.*
+import empleados.*
+import destino.*
+import paquete.*
+
+
+
+
+describe "Mensajeros de pelicula" {
+	test "Test 4" {
+		
+        paquete.pagarPaquete()
+		paquete.asignarDestino(puenteDeBrooklyn)
+        saraConnor.setPeso(70)
+        saraConnor.setVehiculo(moto)
+        paquete.asignarEmpleado(saraConnor)
+
+        assert.that(paquete.puedeSerEntregado())
+	}
+
+	
+}

@@ -1,0 +1,19 @@
+import empleados.*
+import destino.*
+import paquete.*
+
+
+
+
+describe "Mensajeros de pelicula" {
+	test "Test 1" {
+		
+        paquete.quitarPagoAPaquete()
+		paquete.asignarDestino(laMatrix)
+        paquete.asignarEmpleado(neo)
+
+        assert.notThat(paquete.puedeSerEntregado())
+	}
+
+	
+}

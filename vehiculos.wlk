@@ -9,14 +9,17 @@ object moto {
 object camion {
     
     var acoplados = 0
+    const pesoCamion = 500
+    const pesoPorAcoplado = 500
 
 
-    method setAcoplados(valor) {
-        acoplados = valor
+    method acoplados(_acoplados) {
+        acoplados = _acoplados
     }
 
     method peso(){
-        return 500 + (acoplados * 500)
+    
+        return pesoCamion + (acoplados * pesoPorAcoplado)
     }
 
 }

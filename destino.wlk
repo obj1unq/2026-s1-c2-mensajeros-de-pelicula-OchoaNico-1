@@ -1,14 +1,16 @@
 object puenteDeBrooklyn {
+
+    const pesoSoportado = 1000
     
-    method cumpleConLosRequisitos(empleado) {
-        return empleado.peso() <= 1000
+    method puedePasar(empleado) {
+        return empleado.peso() <= pesoSoportado
     }
 
 }
 
 object laMatrix {
     
-    method cumpleConLosRequisitos(empleado) {
+    method puedePasar(empleado) {
         return empleado.puedeHacerUnaLlamada()
     }
 

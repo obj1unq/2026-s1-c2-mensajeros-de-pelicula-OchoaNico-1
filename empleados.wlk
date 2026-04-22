@@ -16,8 +16,8 @@ object neo {
 
     var tieneCredito = true
   
-    method setTieneCredito (valor){
-        tieneCredito = valor
+    method tieneCredito (_tieneCredito){
+        tieneCredito = _tieneCredito
     }
 
     method puedeHacerUnaLlamada() {
@@ -34,16 +34,16 @@ object neo {
 
 object saraConnor {
 
-    var peso = null
-    var vehiculo = null
+    var peso = 65
+    var vehiculo = moto
 
 
-    method setVehiculo(vehiculoAsignado) {
-        vehiculo = vehiculoAsignado
+    method vehiculo(_vehiculoAsignado) {
+        vehiculo = _vehiculoAsignado
     }
 
-    method setPeso(valor) {
-        peso = valor
+    method peso(_valor) {
+        peso = _valor
     }
 
     method puedeHacerUnaLlamada() {

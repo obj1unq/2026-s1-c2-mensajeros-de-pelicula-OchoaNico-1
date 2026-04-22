@@ -1,0 +1,43 @@
+import empleados.*
+import destino.*
+import paquete.*
+import vehiculos.*
+
+
+
+
+describe "Mensajeros de pelicula" {
+	test "Test 1" {
+		
+        paquete.quitarPagoAPaquete()
+
+        assert.notThat(paquete.puedeSerEntregadoPorA(neo,laMatrix))
+	}
+
+	test "Test 2" {
+		
+        paquete.pagarPaquete()
+
+        assert.that(paquete.puedeSerEntregadoPorA(jeanGray, laMatrix))
+	}
+
+      	test "Test 3" {
+		
+        paquete.pagarPaquete()
+        saraConnor.peso(70)
+        saraConnor.vehiculo(camion)
+        camion.acoplados(1)
+        assert.equals(1070,saraConnor.peso())
+
+        assert.notThat(paquete.puedeSerEntregadoPorA(saraConnor, puenteDeBrooklyn))
+	}  
+
+	test "Test 4" {
+		
+        paquete.pagarPaquete()
+        saraConnor.peso(70)
+        saraConnor.vehiculo(moto)
+
+        assert.that(paquete.puedeSerEntregadoPorA(saraConnor, puenteDeBrooklyn))
+	}        
+}
